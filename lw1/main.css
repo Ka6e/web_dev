@@ -1,0 +1,23 @@
+body {
+    width: 2600px;
+    height: 1440px;
+}
+
+#top_logo{
+    font-family: Lora;
+}
+
+a{
+    text-decoration: none;
+    color: #2E2E2E;
+}
+
+#top_nav{
+    position: absolute;
+    left: 50%;
+    word-spacing: 36px;
+}
+
+.container{
+    position: relative;
+}
