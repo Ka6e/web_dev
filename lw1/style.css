@@ -3,10 +3,12 @@ body{
     height: 2600px;
     margin: 0px;
 }
+
 header{
     width: 1440px;
     height: 74px;
 }
+
 .top{
     display: flex;
     justify-content: center; 
@@ -16,6 +18,7 @@ header{
     position: relative;
 
 }
+
 .top_logo{
     width: 92px;
     height: 26px;
@@ -27,14 +30,13 @@ header{
     line-height: 26px;
     font-family: Lora;
 }
+
 .top_nav{
-    
+    position: absolute;
     width: 376.61px;
     height: 40px;
-    position: absolute;
-    right: 0;
-    padding-top: 8px;
-    word-spacing: 36px;
+    left: 563.39px;
+    word-spacing: 30px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -42,38 +44,171 @@ a{
     text-decoration: none;
     color: #2E2E2E;
 }
- 
+
+.Heading{
+    position: absolute;
+    width: 940px;
+    height: 159px;
+    top: 163px;
+    left: 250px;
+    padding: 0px, 218px, 75px, 218px;
+
+}
+
+h1{
+    width: 498px;
+    height: 51px;
+    position: absolute;
+    top: -7px;
+    left: 221px;
+    font-family: Lora;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 51px;
+    letter-spacing: 2px;
+    text-align: center;
+    
+}
+
+.Heading p{
+    color:  #2E2E2EA1;
+    width: 504px;
+    height: 20px;
+    position: absolute;
+    top: 64px;
+    left: 218px;
+    font-family: Oxygen;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+}
 
 .top_image{
+    position: absolute;
     width: 1440px;
     height: 534px;
+    top: 360px;
 }
-.Heading{
-    text-align: center;
-    line-height: 1;
-    h{
-        color: #2E2E2E;
-    }
 
-    p{
-        color: #2E2E2EA1;
-    }
+.box_content{
+    position: relative;
+    width: 1440px;
+    height: 1706px;
+    top: 894px;
 }
 
 .content{
-    color: #101315;
-    text-align: justify;
+    position: relative;
+    width: 960px;
+    height: 1431px;
+    top: 140px;
+    left: 240px;
+    font-family: Oxygen;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:  #101315;
+}
+
+footer{
+    width: 1440px;
+    height: 89px;
+    top: 2600px;
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 .bot{
     position: absolute;
-}
-.bottom_logo{
-    color:#FFFFFF;
+    width: 960px;
+    height: 34px;
+    top: 28px;
+    left: 240px;
+    padding: 0px, 0.03px, 2px, 10px;
+    margin: auto;
 }
 
-.bot_image{
-    width: 1440px;
-    height: 89px;
-    top: 2600px;
+.bottom_logo{
+    position: absolute;
+    width: 92px;
+    height: 26px;
+    top: 3px;
+    left: 10px;
+    font-family: Lora;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+}
+.bottom_nav{
+    position: absolute;
+    width: 639.98px;
+    height: 32px;
+    left: 319.98px;
+    padding: 3px, 9.97px, 3px, 358.02px;
+}
+.ref1{
+    position: absolute;
+    width: 37px;
+    height: 26px;
+    top: 3px;
+    left: 358.02px;
+    color:black;
+    font-family: Oxygen;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-align: right;
+}
+.ref2{
+    position: absolute;
+    width: 76px;
+    height: 26px;
+    top: 3px;
+    left: 415.02px;
+    font-family: Oxygen;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-align: right;
+    color: black;
+}
+
+.ref3{
+    position: absolute;
+    width: 42px;
+    height: 26px;
+    top: 3px;
+    left: 511.02px;
+    font-family: Oxygen;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-align: right;
+    color: black;
+}
+.ref4{
+    position: absolute;
+    width: 57px;
+    height: 26px;
+    top: 3px;
+    left: 573.02px;
+    font-family: Oxygen;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-align: right;
+    color: black;
 }
