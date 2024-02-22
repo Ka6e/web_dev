@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen:wght@300;400;700&display=swap');
+
+body{
+    width: 1440px;
+    height: 2600px;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 1440px;
+    height: 74px;
+}
+
+.top{
+    width: 940px;
+    height: 40px;
+    margin: 17px 250px;
+}
+
+.top_logo{
+    margin-top: 3px;
+    margin-bottom: 11px;
+    margin-right: 471.39px;
+    display: inline;
+}
+
+.top_nav li{
+    display: inline;
+    font-family: 'Oxygen', sans-serif;
+    color: #2E2E2E;
+}
+.ref1{
+    
+}
+
+.Heading{
+    width: 940px;
+    height: 159px;
+    margin: 83px 250px 0px 250px;
+}
+
+h1{
+    width: 498px;
+    height: 51px;
+    margin: 7px 221px 0px 221px;
+    font-family: 'Lora', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 51px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #2E2E2E;    
+}
+
+.Heading p{
+    color:  #2E2E2EA1;
+    margin: 20px 218px 75px 218px;
+    width: 504px;
+    height: 20px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.top_image{
+    margin-top: 38px;
+    width: 1440px;
+    height: 534px;
+    top: 360px;
+}
+
+.box{
+    position: relative;
+    width: 1440px;
+    height: 1706px;
+    top: 894px;      
+}
+
+
+.content{
+    margin: 140px 240px 0px 240px;
+    width: 960px;
+    height: 1431px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:  #101315;
+}
+
+footer{
+    width: 1440px;
+    height: 89px;
+    margin-top: 49px;
+    background-color: #4D565D;
+    background-image: url("12.jpg");
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.bottom{
+    position: absolute;
+    width: 960px;
+    height: 34px;
+    margin: 28px 240px 27px 240px;
+}
+
+.bottom_logo{
+    margin: 3px 217.92px 3px 10px;
+}
+.bottom_nav{
+    width: 639.98px;
+    height: 32px;  
+    margin: 0px 0.03px 2px ;
+}
+
+.bottom_nav li{
+    list-style-type: none;
+    color: #FFFFFF99;
+    display: inline;
+}
