@@ -26,13 +26,19 @@ header{
     display: inline;
 }
 
+.top_nav{
+    display: inline;
+    width: 376.61px;
+    height: 40px;
+}
 .top_nav li{
     display: inline;
     font-family: 'Oxygen', sans-serif;
     color: #2E2E2E;
-}
-.ref1{
-    
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.6px;
 }
 
 .Heading{
@@ -120,7 +126,9 @@ footer{
 .bottom_nav{
     width: 639.98px;
     height: 32px;  
-    margin: 0px 0.03px 2px ;
+    margin: 0px 0.03px 2px;
+    padding: 0;
+    display: inline;
 }
 
 .bottom_nav li{
