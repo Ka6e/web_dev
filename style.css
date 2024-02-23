@@ -23,14 +23,15 @@ header{
     margin-top: 3px;
     margin-bottom: 11px;
     margin-right: 471.39px;
-    display: inline;
 }
-
 .top_nav{
     display: inline;
+    padding: 0;
     width: 376.61px;
     height: 40px;
 }
+
+
 .top_nav li{
     display: inline;
     font-family: 'Oxygen', sans-serif;
@@ -126,13 +127,17 @@ footer{
 .bottom_nav{
     width: 639.98px;
     height: 32px;  
-    margin: 0px 0.03px 2px;
+    margin: 0px 0.03px 2px 217.98px;
     padding: 0;
-    display: inline;
+    display: inline;    
 }
 
 .bottom_nav li{
     list-style-type: none;
     color: #FFFFFF99;
     display: inline;
+    font-family: 'Oxygen', sans-serif;
+    line-height: 26px;
+    letter-spacing: 1px;
+
 }
