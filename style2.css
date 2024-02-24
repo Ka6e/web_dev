@@ -1,13 +1,16 @@
 .body{
-    width: auto;
     height: 1909px;
     margin: 0;
-    padding: 0;
 }
 .header{
-    width: 100px;
+    margin: 0;
     height: 500px;
+    background-image: url("5.jpg");
+    background-size: cover;
+    background-position: center;
+    
 }
+
 .main{
     display: flex;
     top: 565px;
