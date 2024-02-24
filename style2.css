@@ -1,5 +1,28 @@
+.body{
+    width: auto;
+    height: 1909px;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100px;
+    height: 500px;
+}
+.main{
+    display: flex;
+    top: 565px;
+    width: auto;
+    height: 1255px;
+
+}
+
 .footer{
     width: auto;
     height: 89px;
     background-image: url("12.jpg");
+}
+
+.bottom_menu__links li{
+    display: inline;
+    list-style: none;
 }
