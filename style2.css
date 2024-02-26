@@ -130,3 +130,90 @@ body{
     letter-spacing: 1px;
     color:  #FFFFFF99;
 }
+
+.first__banner{
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+    height: 280px;
+    border-radius: 3px;
+    background-image: url("11.jpg");
+    background-size: cover; 
+}
+
+.content__1banner{
+    width: 460px;
+    height: 181px;
+}
+
+.banner__title1{
+    display: flex;
+}
+
+.banner__title1 h3{
+    font-family: "Lora", sans-serif;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.banner__subtitle1 p{
+    font-family: "Oxygen", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFFB2;
+}
+
+
+
+.banner__info1{
+    width: 460px;
+    height: 35px;    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.left__info1{
+    display: flex;
+    align-items: center;
+}
+
+.left__info1 p{
+    font-family: "Oxygen", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFFB2;
+}
+
+.right__info1{
+    display: flex;
+    width: 108px;
+    height: 35px; 
+    align-items: center;    
+}
+
+.right__info1 p{
+    font-family: "Oxygen", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+        
+}
+
+.person1{
+    width: 26px;
+    height: 26px;
+    border-radius: 60px;    
+}

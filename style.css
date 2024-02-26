@@ -20,17 +20,15 @@ header{
 }
 
 .top_logo{
-    margin-top: 3px;
-    margin-bottom: 11px;
-    margin-right: 471.39px;
+    vertical-align: bottom;
 }
 .top_nav{
     display: inline;
     padding: 0;
+    margin-left: 470px;
     width: 376.61px;
     height: 40px;
 }
-
 
 .top_nav li{
     display: inline;
@@ -122,12 +120,14 @@ footer{
 }
 
 .bottom_logo{
-    margin: 3px 217.92px 3px 10px;
+    vertical-align: bottom;
 }
+
 .bottom_nav{
+    vertical-align: bottom;
     width: 639.98px;
     height: 32px;  
-    margin: 0px 0.03px 2px 217.98px;
+    margin-left: 470px;
     padding: 0;
     display: inline;    
 }
@@ -139,5 +139,4 @@ footer{
     font-family: 'Oxygen', sans-serif;
     line-height: 26px;
     letter-spacing: 1px;
-
 }
