@@ -5,45 +5,21 @@
     padding: 0;
     margin: 0;
 }
-
-body{
-    height: 1909px;
-}
-
+ 
 .header{
-    height: 500px;
-    background-image: url("5.jpg");
-    background-position: center;
-    background-size: cover;
-    background-color: #00000080;
-    background-blend-mode: overlay;
+    padding: 17px 250px;
 }
 
-.header__menu{
-    height: 74px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.header__logo{
-    width: 92px;
-    height: 26px;
-    align-self: center;
-}
-
-.header__menu-list{
-    padding: 0;
-    width: 376.61px;    
-    height: 40px;
+ .header__menu{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .header__menu-list li{
-    display: inline;
     list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
     font-family: "Oxygen", sans-serif;
     font-size: 12px;
     font-weight: 400;
@@ -51,21 +27,31 @@ body{
     letter-spacing: 0.6px;
     text-align: left;
     color: #FFFFFF;
+} 
+
+.cave-background{
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 500px;
+    margin: auto;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
 }
 
-.header__heading{
-    height: 159px;
+.main{
+    
+}
+
+.main__heading{
+    margin: 184px 250px 75px; 
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    margin-top: 110px;
+    align-items: center;
 }
 
-.header__title {
-    margin-bottom: 0;
-    width: 498px;
-    height: 51px;
+.main__heading h1{
     font-family: "Lora", sans-serif;
     font-size: 50px;
     font-weight: 400;
@@ -75,26 +61,24 @@ body{
     color: #FFFFFF;
 }
 
-.header__subtitle{
+.main__heading p{
+    margin-top: 20px;
     font-family: "Oxygen", sans-serif;
     font-size: 17px;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0em;
     text-align: center;
-    color:#FFFFFFA1;
+    color: #FFFFFFA1;
 }
 
-.button{
+.main__heading-button{
     margin-top: 31px;
-}
-
-.header__button{
-    border: 0;
     width: 167px;
     height: 44px;
-    border-radius: 3px;
-    background: #DD783F;
+    border-radius: 3px; 
+    border: 0;
+    background-color: #DD783F;  
     font-family: "Oxygen", sans-serif;
     font-size: 13px;
     font-weight: 400;
@@ -104,23 +88,17 @@ body{
     color: #FFFFFF;
 }
 
-.menu{
-    height: 65px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color:  #FFFFFF;
+.main__menu{
 }
 
-.menu__links{
-    width: 960px;
-    height: 46px;
+.main__menu-sections{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-top: 22px;
+    padding-bottom: 23px;
 }
 
-.menu__links li{
+.main__menu-sections li{
     list-style: none;
     font-family: "Lora", sans-serif;
     font-size: 14px;
@@ -128,185 +106,34 @@ body{
     line-height: 20px;
     letter-spacing: 0em;
     text-align: center;
+    color: #768088;
 }
-
-.content{
-    height: 1225px;
-    display: flex;
-    flex-direction: column;
-    background-color: #F7F7F7;
-}
-
-.content__top-contetn{
-    display: flex;
-    flex-direction: column;
-    justify-content:  space-around;
-    align-items: center;
-    height: 414px    
-}
-
-.content__top-heading{
-    display: flex;
-    justify-content: center;
-}
-
-.content__banners{
-    display: flex;
-    width: 940px;
-    justify-content: space-between;
-}
-
-.first__banner{
-    display: flex;
-    flex-direction: column;
-    width: 460px;
-    height: 280px;
-    border-radius: 3px;
-    background-image: url("11.jpg");
-    background-size: cover; 
-}
-
-.content__first-banner{
-    width: 460px;
-    height: 181px;
-}
-
-.banner__title1{
-    display: flex;
-}
-
-.banner__title1 h3{
-    font-family: "Lora", sans-serif;
-    font-size: 27px;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #FFFFFF;
-}
-
-.banner__subtitle1 p{
-    font-family: "Oxygen", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 25px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #FFFFFFB2;
-}
-
-.banner__info1{
-    width: 460px;
-    height: 35px;    
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-}
-.left__info1{
-    display: flex;
-    align-items: center;
-}
-
-.left__info1 p{
-    font-family: "Oxygen", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 35px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #FFFFFFB2;
-}
-
-.right__info1{
-    display: flex;
-    width: 108px;
-    height: 35px; 
-    align-items: center;    
-}
-
-.right__info1 p{
-    font-family: "Oxygen", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 35px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #FFFFFFB2;
-}
-
-.person1{
-    width: 26px;
-    height: 26px;
-    border-radius: 60px;    
-}
-
-.second__banner{
-    display: flex;
-    flex-direction: column;
-    width: 460px;
-    height: 280px;
-    border-radius: 3px;
-    background-image: url("2.jpg");
-    background-size: cover;     
-}
-
-.content__center-content{
-    height: 752px;
-    display: flex;
-}
-
-.third__banner{
-    display: flex;
-    flex-direction: column;
-}
-
-.third{
-    width: 295.98px;
-    height: 150px;    
-}
-
-
-
 
 .footer{
-    height: 89px;
-    background-color: #4D565D;
-    background-image: url("12.jpg");
-    background-position: center;
+    background-image: url("../images/12.jpg");
+    background-color: #232F3899;
     background-size: cover;
+    background-position: center;
     background-blend-mode: overlay;
+
 }
 
 .footer__menu{
-    height: 89px;
+    padding: 28px 240px 27px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
 }
 
-.footer__logo{
-    width: 92px;
-    height: 26px;
-    align-self: center;
-}
-
-.footer__menu-list{
-    padding: 0;
-    width: 376.61px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.footer__menu-list li {
+.footer__menu-list li{
     list-style: none;
-    display: inline;
+    display: inline-block;
+    padding: 10px 20px;
     font-family: "Oxygen", sans-serif;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 1px;
-    color:  #FFFFFF99;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+    text-align: left;
+    color: #FFFFFF99;
 }
