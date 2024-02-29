@@ -1,142 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen:wght@300;400;700&display=swap');
 
-body{
-    width: 1440px;
-    height: 2600px;
+*{
+    padding: 0;
     margin: 0;
-    padding: 0;
 }
 
-header{
-    width: 1440px;
-    height: 74px;
-}
-
-.top{
-    width: 940px;
-    height: 40px;
+.header{
+    max-height: 74px;
     margin: 17px 250px;
+    text-align: center;
 }
 
-.top_logo{
+.header__logo{
     vertical-align: bottom;
-}
-.top_nav{
-    display: inline;
-    padding: 0;
-    margin-left: 470px;
-    width: 376.61px;
-    height: 40px;
+    margin-right: 471.39px;
+    margin-top: 7px;
+    margin-bottom: 11px;
 }
 
-.top_nav li{
-    display: inline;
-    font-family: 'Oxygen', sans-serif;
-    color: #2E2E2E;
+.navigation__header-list{
+    display: inline-block;
+    padding-bottom: 11px;
+}
+
+
+.navigation__header-list li{
+    list-style: none;
+    display: inline-block;
+    font-family: "Oxygen", sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0.6px;
+    text-align: left;
+    color: #2E2E2E;
+    padding-right: 42px;
 }
 
-.Heading{
-    width: 940px;
-    height: 159px;
-    margin: 83px 250px 0px 250px;
+.navigation__header-list li:last-child{
+    padding: 0;
 }
 
-h1{
-    width: 498px;
-    height: 51px;
-    margin: 7px 221px 0px 221px;
-    font-family: 'Lora', sans-serif;
+.main__heading{
+    margin: 89px 250px 38px;
+}
+
+.heading__title{
+    margin: 7px 221px 20px;
+    text-align: center;
+    font-family: "Lora", sans-serif;
     font-size: 50px;
     font-weight: 400;
     line-height: 51px;
     letter-spacing: 2px;
     text-align: center;
-    color: #2E2E2E;    
+    color: #2E2E2E;
 }
 
-.Heading p{
-    color:  #2E2E2EA1;
-    margin: 20px 218px 75px 218px;
-    width: 504px;
-    height: 20px;
-    font-family: 'Oxygen', sans-serif;
+.heading__subtitle{
+    text-align: center;
+    font-family: Oxygen;
     font-size: 17px;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0em;
     text-align: center;
+    color: #2E2E2EA1;    
 }
 
-.top_image{
-    margin-top: 38px;
-    width: 1440px;
-    height: 534px;
-    top: 360px;
+.banner{
+    width: 100%;
+    max-height: 534px;
+    border-radius: 3px;    
 }
 
-.box{
-    position: relative;
-    width: 1440px;
-    height: 1706px;
-    top: 894px;      
-}
-
-
-.content{
-    margin: 140px 240px 0px 240px;
-    width: 960px;
-    height: 1431px;
-    font-family: 'Oxygen', sans-serif;
+.main__content{
+    text-align: left;
+    font-family: "Oxygen";
     font-size: 24px;
     font-weight: 400;
     line-height: 35px;
-    letter-spacing: 0em;
-    text-align: left;
-    color:  #101315;
+    letter-spacing: 0;    
 }
 
 footer{
-    width: 1440px;
-    height: 89px;
-    margin-top: 49px;
-    background-color: #4D565D;
-    background-image: url("12.jpg");
-    background-blend-mode: overlay;
-    background-position: center;
+    padding: 28px 240px 27px;
+    background-color: #232F3899;
+    background-image: url("../images/12.jpg");
     background-size: cover;
-    position: relative;
+    background-position: center;
+    background-blend-mode: overlay;
 }
 
-.bottom{
-    position: absolute;
-    width: 960px;
-    height: 34px;
-    margin: 28px 240px 27px 240px;
-}
-
-.bottom_logo{
-    vertical-align: bottom;
-}
-
-.bottom_nav{
-    vertical-align: bottom;
-    width: 639.98px;
-    height: 32px;  
-    margin-left: 470px;
-    padding: 0;
-    display: inline;    
-}
-
-.bottom_nav li{
-    list-style-type: none;
-    color: #FFFFFF99;
+.footer__logo{
     display: inline;
-    font-family: 'Oxygen', sans-serif;
-    line-height: 26px;
-    letter-spacing: 1px;
 }
