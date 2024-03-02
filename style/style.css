@@ -76,7 +76,8 @@
 }
 
 .main__content{
-    text-align: left;
+    padding: 140px 240px 135px;
+     text-align: left;
     font-family: "Oxygen";
     font-size: 24px;
     font-weight: 400;
@@ -85,6 +86,7 @@
 }
 
 footer{
+    text-align: center;
     padding: 28px 240px 27px;
     background-color: #232F3899;
     background-image: url("../images/12.jpg");
@@ -94,5 +96,30 @@ footer{
 }
 
 .footer__logo{
-    display: inline;
+    vertical-align: bottom;
+    margin-right: 471.39px;
+    margin-top: 7px;
+    margin-bottom: 11px;
+}
+
+.navigation__footer-list{
+    display: inline-block;
+    padding-bottom: 11px;
+}
+
+.navigation__footer-list li{
+    list-style: none;
+    display: inline-block;
+    font-family: "Oxygen", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-align: right;
+    padding-right: 42px;
+    color: #FFFFFF99;
+}   
+
+.navigation__footer-list li:last-child{
+    padding: 0;
 }
