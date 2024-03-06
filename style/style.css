@@ -1,31 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen:wght@300;400;700&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-.header{
+.header {
     max-height: 74px;
     margin: 17px 250px;
     text-align: center;
 }
 
-.header__logo{
+.header__logo {
     vertical-align: bottom;
     margin-right: 471.39px;
     margin-top: 7px;
     margin-bottom: 11px;
 }
 
-.navigation__header-list{
+.navigation__header-list {
     display: inline-block;
     padding-bottom: 11px;
 }
 
 
-.navigation__header-list li{
+.navigation__header-list li {
     list-style: none;
     display: inline-block;
     font-family: "Oxygen", sans-serif;
@@ -38,15 +38,15 @@
     padding-right: 42px;
 }
 
-.navigation__header-list li:last-child{
+.navigation__header-list li:last-child {
     padding: 0;
 }
 
-.main__heading{
+.main__heading {
     margin: 89px 250px 38px;
 }
 
-.heading__title{
+.heading__title {
     margin: 7px 221px 20px;
     text-align: center;
     font-family: "Lora", sans-serif;
@@ -58,7 +58,7 @@
     color: #2E2E2E;
 }
 
-.heading__subtitle{
+.heading__subtitle {
     text-align: center;
     font-family: Oxygen;
     font-size: 17px;
@@ -66,26 +66,26 @@
     line-height: 20px;
     letter-spacing: 0em;
     text-align: center;
-    color: #2E2E2EA1;    
+    color: #2E2E2EA1;
 }
 
-.banner{
+.banner {
     width: 100%;
     max-height: 534px;
-    border-radius: 3px;    
+    border-radius: 3px;
 }
 
-.main__content{
+.main__content {
     padding: 140px 240px 135px;
-     text-align: left;
+    text-align: left;
     font-family: "Oxygen";
     font-size: 24px;
     font-weight: 400;
     line-height: 35px;
-    letter-spacing: 0;    
+    letter-spacing: 0;
 }
 
-footer{
+footer {
     text-align: center;
     padding: 28px 240px 27px;
     background-color: #232F3899;
@@ -95,19 +95,19 @@ footer{
     background-blend-mode: overlay;
 }
 
-.footer__logo{
+.footer__logo {
     vertical-align: bottom;
     margin-right: 471.39px;
     margin-top: 7px;
     margin-bottom: 11px;
 }
 
-.navigation__footer-list{
+.navigation__footer-list {
     display: inline-block;
     padding-bottom: 11px;
 }
 
-.navigation__footer-list li{
+.navigation__footer-list li {
     list-style: none;
     display: inline-block;
     font-family: "Oxygen", sans-serif;
@@ -118,8 +118,8 @@ footer{
     text-align: right;
     padding-right: 42px;
     color: #FFFFFF99;
-}   
+}
 
-.navigation__footer-list li:last-child{
+.navigation__footer-list li:last-child {
     padding: 0;
 }
