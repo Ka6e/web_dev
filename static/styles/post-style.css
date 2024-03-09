@@ -75,7 +75,7 @@
     border-radius: 3px;
 }
 
-.main__content {
+.main__content-text{
     padding: 140px 240px 135px;
     text-align: left;
     font-family: "Oxygen";
@@ -89,7 +89,7 @@ footer {
     text-align: center;
     padding: 28px 240px 27px;
     background-color: #232F3899;
-    background-image: url("../images/12.jpg");
+    background-image: url("../images/blured-background.jpg");
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;

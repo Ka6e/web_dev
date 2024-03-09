@@ -2,14 +2,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style2.css">
+    <link rel="stylesheet" href="static/styles/home-style.css">
     <title>Let's do it together</title>
 </head>
 <body>
     <div class="background">
         <header class="header">
             <nav class="header__menu">
-                <img src="images/Escape3.svg" class="header__logo">    
+                <img src="src/images/Escape-white.svg" class="header__logo">    
                 <ul class="header__menu-list list">
                     <li>HOME</li>
                     <li>CATEGORIES</li>
@@ -47,7 +47,7 @@
                         <p class="top-cards__subtitle">The road ahead might be paved - it might not be</p>
                         <div class="info">
                             <div class="left-info">
-                                <img src="images/person1.jpg" class="person">
+                                <img src="src/images/person1.jpg" class="person">
                                 <p class="name">Mat Vogels</p>
                             </div>
                             <div class="right-info">
@@ -61,7 +61,7 @@
                         <p class="top-cards__subtitle">Once a year, go someplace you’ve never been before.</p>
                         <div class="info">
                             <div class="left-info">
-                                <img src="images/person2.jpg" class="person">
+                                <img src="src/images/person2.jpg" class="person">
                                 <p class="name">Mat Vogels</p>
                             </div>
                             <div class="right-info">
@@ -77,14 +77,14 @@
                 </div>
                 <div class="center-cards">
                     <div class="center-cards__firts">
-                        <img src="images/air-balloon.jpg" class="image1">
+                        <img src="src/images/air-balloon.jpg" class="image1">
                         <div class="center-cards__discribtion">
                             <h4 class="center-cards__title">Still Standing Tall</h4>
                             <p class="center-cards__subtitle subtitle1">Life begins at the end of your comfort zone.</p>
                         </div>
                         <div class="center-cards__info">
                             <div class="left-info1">
-                                <img src="images/person2.jpg" class="person">
+                                <img src="src/images/person2.jpg" class="person">
                                 <p class="center-cards__name">William Wong</p>
                             </div>
                             <div class="right-info1">
@@ -93,14 +93,14 @@
                         </div>
                     </div>
                     <div class="center-cards__second">
-                        <img src="images/bridge.jpg" class="image1">
+                        <img src="src/images/bridge.jpg" class="image1">
                         <div class="center-cards__discribtion">
                             <h4 class="center-cards__title">Sunny Side Up</h4>
                             <p class="center-cards__subtitle">No place is ever as bad as they tell you it’s going to be.</p>
                         </div>
                         <div class="center-cards__info">
                             <div class="left-info1">
-                                <img src="images/person1.jpg" class="person">
+                                <img src="src/images/person1.jpg" class="person">
                                 <p class="center-cards__name">Mat Vogels</p>
                             </div>
                             <div class="right-info1">
@@ -109,14 +109,14 @@
                         </div>
                     </div>
                     <div class="center-cards__third">
-                        <img src="images/lake.jpg" class="image1">
+                        <img src="src/images/lake.jpg" class="image1">
                         <div class="center-cards__discribtion">
                             <h4 class="center-cards__title">Water Falls</h4>
                             <p class="center-cards__subtitle">We travel not to escape life, but for life not to escape us.</p>
                         </div>
                         <div class="center-cards__info">
                             <div class="left-info1">
-                                <img src="images/person1.jpg" class="person">
+                                <img src="src/images/person1.jpg" class="person">
                                 <p class="center-cards__name">Mat Vogels</p>
                             </div>
                             <div class="right-info1">
@@ -125,14 +125,14 @@
                         </div>
                     </div>
                     <div class="center-cards__fourth">
-                        <img src="images/ocean.jpg" class="image1">
+                        <img src="src/images/ocean.jpg" class="image1">
                         <div class="center-cards__discribtion">
                             <h4 class="center-cards__title">Through the Mist</h4>
                             <p class="center-cards__subtitle">Travel makes you see what a tiny place you occupy in the world.</p>
                         </div>
                         <div class="center-cards__info">
                             <div class="left-info1">
-                                <img src="images/person2.jpg" class="person">
+                                <img src="src/images/person2.jpg" class="person">
                                 <p class="center-cards__name">William Wong</p>
                             </div>
                             <div class="right-info1">
@@ -141,14 +141,14 @@
                         </div>
                     </div>
                     <div class="center-cards__fifth">
-                        <img src="images/fogy_bridge.jpg" class="image1">
+                        <img src="src/images/fogy_bridge.jpg" class="image1">
                         <div class="center-cards__discribtion">
                             <h4 class="center-cards__title">Awaken Early</h4>
                             <p class="center-cards__subtitle subtitle5">Not all those who wander are lost.</p>
                         </div>
                         <div class="center-cards__info">
                             <div class="left-info1">
-                                <img src="images/person1.jpg" class="person">
+                                <img src="src/images/person1.jpg" class="person">
                                 <p class="center-cards__name">Mat Vogels</p>
                             </div>
                             <div class="right-info3">
@@ -157,14 +157,14 @@
                         </div>
                     </div>
                     <div class="center-cards__sixth">
-                        <img src="images/waterfall.jpg" class="image1">
+                        <img src="src/images/waterfall.jpg" class="image1">
                         <div class="center-cards__discribtion">
                             <h4 class="center-cards__title">Still Standing Tall</h4>
                             <p class="center-cards__subtitle">The world is a book, and those who do not travel read only one page.</p>
                         </div>
                         <div class="center-cards__info">
                             <div class="left-info1">
-                                <img src="images/person1.jpg" class="person">
+                                <img src="src/images/person1.jpg" class="person">
                                 <p class="center-cards__name">Mat Vogels</p>
                             </div>
                             <div class="right-info1">
@@ -178,7 +178,7 @@
     </main>
     <footer class="footer">
         <nav class="footer__menu">
-            <img src="images/Escape3.svg" class="footer__logo">
+            <img src="src/images/Escape-white.svg" class="footer__logo">
             <ul class="footer__menu-list">
                 <li>HOME</li>
                 <li>CATEGORIES</li>

@@ -143,7 +143,7 @@
 }
 
 .top-cards__first{
-    background-image: url("../images/11.jpg");
+    background-image: url("../images/northern-lights.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -380,7 +380,7 @@
 }
 
 .footer{
-    background-image: url("../images/12.jpg");
+    background-image: url("../images/blured-background.jpg");
     background-color: #232F3899;
     background-size: cover;
     background-position: center;
