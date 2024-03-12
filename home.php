@@ -1,3 +1,21 @@
+<?php
+$posts = [
+ [
+   'title' => 'The Road Ahead',
+   'subtitle' => 'The road ahead might be paved - it might not be',
+   'img_modifier' => 'northen-lights',
+   'author' => 'Mat Vogels',
+   'data' => 'September 25, 2015'
+ ],
+ [
+    'title' => 'From Top Down',
+    'subtitle' => 'Once a year, go someplace you’ve never been before.',
+    'img_modifier' => 'wish-balls',
+    'author' => 'William Wong',
+    'data' => 'September 25, 2015'
+ ],
+];
+?>
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
@@ -35,7 +53,13 @@
                 <li>Adventure</li>
             </ul>
         </nav>
-        <div class="main__content content">
+        <div class="main__content">
+        <?php 
+     foreach ($posts as $post) {
+       include 'post_preview.php';
+     }
+    ?>
+
             <div class="content__top">
                 <div class="content__top-tilte">
                     <h2>Featured Posts</h2>
@@ -44,7 +68,7 @@
                     <div class="top-cards__first">
                         <p class="genre">PHOTOGRAPHY</p>
                         <h3 class="top-cards__title">The Road Ahead</h3>
-                        <p class="top-cards__subtitle">The road ahead might be paved - it might not be</p>
+                        <p class="top-cards__subtitle">The road ahead might be paved - it might not be.</p>
                         <div class="info">
                             <div class="left-info">
                                 <img src="static/images/person1.jpg" class="person">
@@ -62,7 +86,7 @@
                         <div class="info">
                             <div class="left-info">
                                 <img src="static/images/person2.jpg" class="person">
-                                <p class="name">Mat Vogels</p>
+                                <p class="name">William Wong</p>
                             </div>
                             <div class="right-info">
                                 <p class="data">September 25, 2015</p>
