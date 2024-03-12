@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> The Road Ahead </title>
 </head>
-
 <body>
     <header class="header">
         <nav class="navigation">
-            <img class="header__logo" src="static/images/Escape-black.svg">
+            <img class="header__logo" src="images/Escape-black.svg">
             <ul class="navigation__header-list">
                 <li>HOME</li>
                 <li>CATEGORIES</li>
@@ -24,7 +23,7 @@
             <h1 class="heading__title">The Road Ahead</h1>
             <p class="heading__subtitle">The road ahead might be paved - it might not be.</p>
         </div>
-        <img class="banner" src="static/images/northern-lights.jpg">
+        <img class="banner" src="images/northern-lights.jpg">
         <div class="main__content">
             <p class="main__content-text">Dark spruce forest frowned on either side the frozen waterway. The trees had been<br>
                 stripped by a recent wind of their white covering of frost, and they seemed to lean<br>
@@ -71,7 +70,7 @@
     </main>
     <footer class="footer">
         <nav class="navigation">
-            <img class="footer__logo" src="static/images/Escape-white.svg">
+            <img class="footer__logo" src="images/Escape-white.svg">
             <ul class="navigation__footer-list">
                 <li>HOME</li>
                 <li>CATEGORIES</li>

@@ -2,17 +2,13 @@
 $posts = [
  [
    'title' => 'The Road Ahead',
-   'subtitle' => 'The road ahead might be paved - it might not be',
-   'img_modifier' => 'northen-lights',
-   'author' => 'Mat Vogels',
-   'data' => 'September 25, 2015'
+   'subtitle' => '',
+   'img_modifier' => '',
+   'author' => '',
+   // другие свойства этого поста
  ],
  [
-    'title' => 'From Top Down',
-    'subtitle' => 'Once a year, go someplace you’ve never been before.',
-    'img_modifier' => 'wish-balls',
-    'author' => 'William Wong',
-    'data' => 'September 25, 2015'
+   // свойства второго поста
  ],
 ];
 ?>
@@ -27,7 +23,7 @@ $posts = [
     <div class="background">
         <header class="header">
             <nav class="header__menu">
-                <img src="static/images/Escape-white.svg" class="header__logo">    
+                <img src="images/Escape-white.svg" class="header__logo">    
                 <ul class="header__menu-list list">
                     <li>HOME</li>
                     <li>CATEGORIES</li>
@@ -54,12 +50,11 @@ $posts = [
             </ul>
         </nav>
         <div class="main__content">
-        <?php 
-     foreach ($posts as $post) {
-       include 'post_preview.php';
-     }
-    ?>
-
+            <?php 
+                foreach ($posts as $post) {
+                include 'post_preview.php';
+                }
+            ?>
             <div class="content__top">
                 <div class="content__top-tilte">
                     <h2>Featured Posts</h2>
@@ -71,7 +66,7 @@ $posts = [
                         <p class="top-cards__subtitle">The road ahead might be paved - it might not be.</p>
                         <div class="info">
                             <div class="left-info">
-                                <img src="static/images/person1.jpg" class="person">
+                                <img src="images/person1.jpg" class="person">
                                 <p class="name">Mat Vogels</p>
                             </div>
                             <div class="right-info">
@@ -85,7 +80,7 @@ $posts = [
                         <p class="top-cards__subtitle">Once a year, go someplace you’ve never been before.</p>
                         <div class="info">
                             <div class="left-info">
-                                <img src="static/images/person2.jpg" class="person">
+                                <img src="images/person2.jpg" class="person">
                                 <p class="name">William Wong</p>
                             </div>
                             <div class="right-info">
@@ -101,14 +96,14 @@ $posts = [
                 </div>
                 <div class="center-cards">
                     <div class="center-cards__firts">
-                        <img src="static/images/air-balloon.jpg" class="image1">
+                        <img src="images/air-balloon.jpg" class="image1">
                         <div class="center-cards__discribtion">
                             <h4 class="center-cards__title">Still Standing Tall</h4>
                             <p class="center-cards__subtitle subtitle1">Life begins at the end of your comfort zone.</p>
                         </div>
                         <div class="center-cards__info">
                             <div class="left-info1">
-                                <img src="static/images/person2.jpg" class="person">
+                                <img src="images/person2.jpg" class="person">
                                 <p class="center-cards__name">William Wong</p>
                             </div>
                             <div class="right-info1">
@@ -117,14 +112,14 @@ $posts = [
                         </div>
                     </div>
                     <div class="center-cards__second">
-                        <img src="static/images/bridge.jpg" class="image1">
+                        <img src="images/bridge.jpg" class="image1">
                         <div class="center-cards__discribtion">
                             <h4 class="center-cards__title">Sunny Side Up</h4>
                             <p class="center-cards__subtitle">No place is ever as bad as they tell you it’s going to be.</p>
                         </div>
                         <div class="center-cards__info">
                             <div class="left-info1">
-                                <img src="static/images/person1.jpg" class="person">
+                                <img src="images/person1.jpg" class="person">
                                 <p class="center-cards__name">Mat Vogels</p>
                             </div>
                             <div class="right-info1">
@@ -133,14 +128,14 @@ $posts = [
                         </div>
                     </div>
                     <div class="center-cards__third">
-                        <img src="static/images/lake.jpg" class="image1">
+                        <img src="images/lake.jpg" class="image1">
                         <div class="center-cards__discribtion">
                             <h4 class="center-cards__title">Water Falls</h4>
                             <p class="center-cards__subtitle">We travel not to escape life, but for life not to escape us.</p>
                         </div>
                         <div class="center-cards__info">
                             <div class="left-info1">
-                                <img src="static/images/person1.jpg" class="person">
+                                <img src="images/person1.jpg" class="person">
                                 <p class="center-cards__name">Mat Vogels</p>
                             </div>
                             <div class="right-info1">
@@ -149,14 +144,14 @@ $posts = [
                         </div>
                     </div>
                     <div class="center-cards__fourth">
-                        <img src="static/images/ocean.jpg" class="image1">
+                        <img src="images/ocean.jpg" class="image1">
                         <div class="center-cards__discribtion">
                             <h4 class="center-cards__title">Through the Mist</h4>
                             <p class="center-cards__subtitle">Travel makes you see what a tiny place you occupy in the world.</p>
                         </div>
                         <div class="center-cards__info">
                             <div class="left-info1">
-                                <img src="static/images/person2.jpg" class="person">
+                                <img src="images/person2.jpg" class="person">
                                 <p class="center-cards__name">William Wong</p>
                             </div>
                             <div class="right-info1">
@@ -165,14 +160,14 @@ $posts = [
                         </div>
                     </div>
                     <div class="center-cards__fifth">
-                        <img src="static/images/fogy_bridge.jpg" class="image1">
+                        <img src="images/fogy_bridge.jpg" class="image1">
                         <div class="center-cards__discribtion">
                             <h4 class="center-cards__title">Awaken Early</h4>
                             <p class="center-cards__subtitle subtitle5">Not all those who wander are lost.</p>
                         </div>
                         <div class="center-cards__info">
                             <div class="left-info1">
-                                <img src="static/images/person1.jpg" class="person">
+                                <img src="images/person1.jpg" class="person">
                                 <p class="center-cards__name">Mat Vogels</p>
                             </div>
                             <div class="right-info3">
@@ -181,14 +176,14 @@ $posts = [
                         </div>
                     </div>
                     <div class="center-cards__sixth">
-                        <img src="static/images/waterfall.jpg" class="image1">
+                        <img src="images/waterfall.jpg" class="image1">
                         <div class="center-cards__discribtion">
                             <h4 class="center-cards__title">Still Standing Tall</h4>
                             <p class="center-cards__subtitle">The world is a book, and those who do not travel read only one page.</p>
                         </div>
                         <div class="center-cards__info">
                             <div class="left-info1">
-                                <img src="static/images/person1.jpg" class="person">
+                                <img src="images/person1.jpg" class="person">
                                 <p class="center-cards__name">Mat Vogels</p>
                             </div>
                             <div class="right-info1">
@@ -202,7 +197,7 @@ $posts = [
     </main>
     <footer class="footer">
         <nav class="footer__menu">
-            <img src="static/images/Escape-white.svg" class="footer__logo">
+            <img src="images/Escape-white.svg" class="footer__logo">
             <ul class="footer__menu-list">
                 <li>HOME</li>
                 <li>CATEGORIES</li>
