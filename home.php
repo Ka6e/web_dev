@@ -2,15 +2,21 @@
 $posts = [
  [
    'title' => 'The Road Ahead',
-   'subtitle' => '',
-   'img_modifier' => '',
-   'author' => '',
+   'subtitle' => 'The road ahead might be paved - it might not be.',
+   'img_modifier' => 'nothern-lights',
+   'author' => 'Mat Vogels',
+   'genre' => 'Photography'
    // другие свойства этого поста
  ],
  [
    // свойства второго поста
+   'title' => 'From Top Down',
+   'subtitle' => 'Once a year, go someplace you’ve never been before.',
+   'img_modifier' => 'wish-balls',
+   'author' => 'William Wong',
+   'genre' => 'Adventure'
  ],
-];
+];  
 ?>
 <!DOCTYPE html>
 <head>
@@ -50,11 +56,12 @@ $posts = [
             </ul>
         </nav>
         <div class="main__content">
-            <?php 
-                foreach ($posts as $post) {
-                include 'post_preview.php';
-                }
-            ?>
+        <?php 
+
+            foreach ($posts as $post) {
+            include 'post_preview.php';
+            }
+        ?>
             <div class="content__top">
                 <div class="content__top-tilte">
                     <h2>Featured Posts</h2>
