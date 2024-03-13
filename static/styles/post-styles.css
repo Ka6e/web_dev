@@ -59,6 +59,7 @@
 }
 
 .heading__subtitle {
+    padding-bottom: 75px;
     text-align: center;
     font-family: Oxygen;
     font-size: 17px;
@@ -88,8 +89,8 @@
 footer {
     text-align: center;
     padding: 28px 240px 27px;
-    background-color: #232F3899;
-    background-image: url("../images/blured-background.jpg");
+    background-color: #232F3899; 
+    background-image: url("../static/images/blured-background.jpg");
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;

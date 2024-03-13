@@ -3,18 +3,20 @@ $posts = [
  [
    'title' => 'The Road Ahead',
    'subtitle' => 'The road ahead might be paved - it might not be.',
-   'img_modifier' => 'nothern-lights',
    'author' => 'Mat Vogels',
-   'genre' => 'Photography'
+   'genre' => 'Photography',
+   'background' => 'nothern-lights',
+   'data' => 'September 25, 2015'
    // другие свойства этого поста
  ],
  [
    // свойства второго поста
    'title' => 'From Top Down',
    'subtitle' => 'Once a year, go someplace you’ve never been before.',
-   'img_modifier' => 'wish-balls',
+   'background' => 'wish-balls',
    'author' => 'William Wong',
-   'genre' => 'Adventure'
+   'genre' => 'Adventure',
+   'data' => 'September 25, 2015'
  ],
 ];  
 ?>
