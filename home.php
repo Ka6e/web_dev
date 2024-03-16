@@ -1,30 +1,36 @@
 <?php
 $posts = [
  [
+   'id' => 1,
    'title' => 'The Road Ahead',
    'subtitle' => 'The road ahead might be paved - it might not be.',
+   'img_modifier' => 'background1',
    'author' => 'Mat Vogels',
-   'genre' => 'Photography',
-   'background' => 'nothern-lights',
+   'author_image' => 'images/person1.jpg',
+   'genre' => 'PHOTOGRAPHY',
+   'genre_color' => 'genre_color1',
    'data' => 'September 25, 2015'
    // другие свойства этого поста
  ],
  [
-   // свойства второго поста
-   'title' => 'From Top Down',
-   'subtitle' => 'Once a year, go someplace you’ve never been before.',
-   'background' => 'wish-balls',
-   'author' => 'William Wong',
-   'genre' => 'Adventure',
-   'data' => 'September 25, 2015'
- ],
+    // свойства второго поста
+    'id' => 2,
+    'title' => 'From Top Down',
+    'subtitle' => 'Once a year, go someplace you’ve never been before.',
+    'img_modifier' => 'background2',
+    'author' => 'William Wong',
+    'author_image' => 'images/person2.jpg',
+    'genre' => 'ADVENTURE',
+    'genre_color' => 'genre_color2',
+    'data' => 'September 25, 2015'
+ ]
 ];  
 ?>
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/styles/home-style.css">
+    <link rel="stylesheet" href="static/styles/home.css">
     <title>Let's do it together</title>
 </head>
 <body>
@@ -58,19 +64,18 @@ $posts = [
             </ul>
         </nav>
         <div class="main__content">
-        <?php 
-
-            foreach ($posts as $post) {
-            include 'post_preview.php';
-            }
-        ?>
             <div class="content__top">
                 <div class="content__top-tilte">
                     <h2>Featured Posts</h2>
                 </div>
                 <div class="top-cards">
-                    <div class="top-cards__first">
-                        <p class="genre">PHOTOGRAPHY</p>
+                    <?php 
+                        foreach ($posts as $post) {
+                        include 'post_preview.php';
+                        }
+                    ?>
+                    <!-- <div class="top-cards__first">
+                        <p class="genre genre_color1">PHOTOGRAPHY</p>
                         <h3 class="top-cards__title">The Road Ahead</h3>
                         <p class="top-cards__subtitle">The road ahead might be paved - it might not be.</p>
                         <div class="info">
@@ -84,7 +89,7 @@ $posts = [
                         </div>
                     </div>
                     <div class="top-cards__second">
-                        <p class="genre-orange">ADVENTURE</p>
+                        <p class="genre genre_color2">ADVENTURE</p>
                         <h3 class="top-cards__title">From Top Down</h3>
                         <p class="top-cards__subtitle">Once a year, go someplace you’ve never been before.</p>
                         <div class="info">
@@ -96,7 +101,7 @@ $posts = [
                                 <p class="data">September 25, 2015</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="content__center">

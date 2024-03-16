@@ -143,18 +143,21 @@
 }
 
 .top-cards__first{
-    background-image: url("../images/northern-lights.jpg");
-    background-size: cover;
+
     display: flex;
     flex-direction: column;
     border-radius: 3px;
     justify-content: flex-end; 
 }
 
+.background1{
+    background-image:url('../images/northern-lights.jpg') ;
+    background-size: cover;
+}
+
 .genre{
     margin: 20px 332px 53px 20px;
     padding: 6px 9px 7px;
-    background-color: #A872B7;
     border-radius: 2px;
     color: #FFFFFF;
     font-family: "Oxygen", sans-serif;
@@ -162,7 +165,11 @@
     font-weight: 400;
     line-height: 13px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
+}
+
+.genre_color1{
+    background-color: #A872B7;
 }
 
 .top-cards__title{
@@ -210,28 +217,19 @@
 }
 
 .top-cards__second{
-    background-image: url("../images/wish-balls.jpg");
-    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     border-radius: 3px;
-
 }
 
-.genre-orange{
-   margin: 20px 353px 53px 20px;
-   padding: 6px 9px 7px;
-   border-radius: 2px;
-   background-color: #DD783F;
-   color: #FFFFFF;
-   font-family: "Oxygen", sans-serif;
-   font-size: 12px;
-   font-weight: 400;
-   line-height: 13px;
-   letter-spacing: 0em;
-   text-align: left;
-   
+.background2{
+    background-image: url("../images/wish-balls.jpg");
+    background-size: cover;
+}
+
+.genre_color2{
+    background-color: #DD783F;
 }
 
 .person{

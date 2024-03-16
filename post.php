@@ -1,3 +1,12 @@
+<?php
+$post = [
+  'id' => 1,
+  'title' => 'The Road Ahead',
+  'subtitle' => 'The road ahead might be paved - it might not be.',
+  'img' => 'images/northern-lights.jpg',
+  
+];
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,10 +29,10 @@
     </header>
     <main class="main">
         <div class="main__heading heading">
-            <h1 class="heading__title">The Road Ahead</h1>
-            <p class="heading__subtitle">The road ahead might be paved - it might not be.</p>
+            <h1 class="heading__title"><?= $post['title']?></h1>
+            <p class="heading__subtitle"><?= $post['subtitle'] ?></p>
         </div>
-        <img class="banner" src="images/northern-lights.jpg">
+        <img class="banner" src="<?= $post['img'] ?>">
         <div class="main__content">
             <p class="main__content-text">Dark spruce forest frowned on either side the frozen waterway. The trees had been<br>
                 stripped by a recent wind of their white covering of frost, and they seemed to lean<br>
