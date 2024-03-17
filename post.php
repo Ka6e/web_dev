@@ -1,10 +1,16 @@
 <?php
+$postId = $_GET['postId'];
 $post = [
-  'id' => 1,
+  'id'=> 1,
   'title' => 'The Road Ahead',
   'subtitle' => 'The road ahead might be paved - it might not be.',
   'img' => 'images/northern-lights.jpg',
-  
+  'logo1' => 'images/Escape-black.svg',
+  'logo2' => 'images/Escape-white.svg',
+  'nav1' => 'HOME',
+  'nav2' => 'CATEGORIES',
+  'nav3' => 'ABOUT',
+  'nav4' => 'CONTACT',
 ];
 ?>
 <!DOCTYPE html>
@@ -18,19 +24,23 @@ $post = [
 <body>
     <header class="header">
         <nav class="navigation">
-            <img class="header__logo" src="images/Escape-black.svg">
+            <img class="header__logo" src="<?= $post['logo1'] ?>">
             <ul class="navigation__header-list">
-                <li>HOME</li>
-                <li>CATEGORIES</li>
-                <li>ABOUT</li>
-                <li>CONTACT</li>
+                <li><?= $post['nav1']?></li>
+                <li><?= $post['nav2']?></li>
+                <li><?= $post['nav3']?></li>
+                <li><?= $post['nav4']?></li>
             </ul>
         </nav>
     </header>
     <main class="main">
         <div class="main__heading heading">
-            <h1 class="heading__title"><?= $post['title']?></h1>
-            <p class="heading__subtitle"><?= $post['subtitle'] ?></p>
+            <h1 class="heading__title">
+                <?= $post['title'] . ' ' .  $postId?>
+            </h1>
+            <p class="heading__subtitle">
+                <?= $post['subtitle'] ?>
+            </p>
         </div>
         <img class="banner" src="<?= $post['img'] ?>">
         <div class="main__content">
@@ -79,12 +89,12 @@ $post = [
     </main>
     <footer class="footer">
         <nav class="navigation">
-            <img class="footer__logo" src="images/Escape-white.svg">
+            <img class="footer__logo" src="<?= $post['logo2'] ?>">
             <ul class="navigation__footer-list">
-                <li>HOME</li>
-                <li>CATEGORIES</li>
-                <li>ABOUT</li>
-                <li>CONTACT</li>
+                <li><?= $post['nav1']?></li>
+                <li><?= $post['nav2']?></li>
+                <li><?= $post['nav3']?></li>
+                <li><?= $post['nav4']?></li>
             </ul>
         </nav>
     </footer>

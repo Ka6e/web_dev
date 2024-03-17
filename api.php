@@ -1,3 +1,4 @@
 <?php
-$method = $_SERVER['REQUEST_METHOD'];
+    $method = $_SERVER['REQUEST_METHOD'];
+    echo "Method: " . $method;
 ?>

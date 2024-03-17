@@ -1,4 +1,4 @@
-<a href="/post?id=<?= $post['id']?>">
+<a  title='<?= $post['title'] ?>' href="/post.php?postId=<?= $post['id'] ?>" style="text-decoration: none;">
    <div class="top-cards__first <?= $post['img_modifier']?>">
       <p class="genre <?= $post['genre_color'] ?>">
          <?= $post['genre'] ?>
