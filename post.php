@@ -1,12 +1,11 @@
 <?php
-$postId = $_GET['postId'];
+$postId = $_GET['id'];
 $post = [
-  'id'=> 1,
   'title' => 'The Road Ahead',
   'subtitle' => 'The road ahead might be paved - it might not be.',
-  'img' => 'images/northern-lights.jpg',
-  'logo1' => 'images/Escape-black.svg',
-  'logo2' => 'images/Escape-white.svg',
+  'img' => 'static/images/northern-lights.jpg',
+  'logo1' => 'static/images/Escape-black.svg',
+  'logo2' => 'static/images/Escape-white.svg',
   'nav1' => 'HOME',
   'nav2' => 'CATEGORIES',
   'nav3' => 'ABOUT',
