@@ -1,4 +1,5 @@
 <?php
+$date = date_create('September 25, 2015');
 $posts = [
  [
    'id' => 1,
@@ -9,7 +10,7 @@ $posts = [
    'author_image' => 'static/images/person1.jpg',
    'genre' => 'PHOTOGRAPHY',
    'genre_color' => 'genre_color1',
-   'data' => 'September 25, 2015'
+   'data' => date_format($date, 'F d, Y'),
    // другие свойства этого поста
  ],
  [
@@ -22,7 +23,7 @@ $posts = [
     'author_image' => 'static/images/person2.jpg',
     'genre' => 'ADVENTURE',
     'genre_color' => 'genre_color2',
-    'data' => 'September 25, 2015'
+    'data' => date_format($date, 'F d, Y'),
  ]
 ];  
 ?>
