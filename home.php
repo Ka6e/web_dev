@@ -1,5 +1,11 @@
 <?php
-$date = date_create('September 25, 2015');
+
+
+
+
+
+
+
 $posts = [
  [
    'id' => 1,
@@ -10,7 +16,7 @@ $posts = [
    'author_image' => 'static/images/person1.jpg',
    'genre' => 'PHOTOGRAPHY',
    'genre_color' => 'genre_color1',
-   'data' => date_format($date, 'F d, Y'),
+   'data' => 1443128400,
    // другие свойства этого поста
  ],
  [
@@ -23,15 +29,72 @@ $posts = [
     'author_image' => 'static/images/person2.jpg',
     'genre' => 'ADVENTURE',
     'genre_color' => 'genre_color2',
-    'data' => date_format($date, 'F d, Y'),
+    'data' => 1443128400,
  ]
-];  
+];
+
+$MiniPosts = [
+ [
+    'id' => 3,
+    'title' => 'Still Standing Tall',
+    'subtitle' => 'Life begins at the end of your comfort zone.',
+    'img_modifier' => 'static/images/air-balloon.jpg',
+    'author' => 'William Wong',
+    'author_image' => 'static/images/person2.jpg',
+    'data' => 1443214800,
+ ],
+ [
+    'id' => 4,
+    'title' => 'Sunny Side Up',
+    'subtitle' => 'No place is ever as bad as they tell you it’s going to be.',
+    'img_modifier' => 'static/images/bridge.jpg',
+    'author' => 'Mat Vogels',
+    'author_image' => 'static/images/person1.jpg',
+    'data' => 1443214800,
+ ],
+ [
+    'id' => 5,
+    'title' => 'Water Falls',
+    'subtitle' => 'We travel not to escape life, but for life not to escape us.',
+    'img_modifier' => 'static/images/lake.jpg',
+    'author' => 'Mat Vogels',
+    'author_image' => 'static/images/person1.jpg',
+    'data' => 1443214800,
+ ],
+ [
+    'id' => 6,
+    'title' => 'Through the Mist',
+    'subtitle' => 'Travel makes you see what a tiny place you occupy in the world.',
+    'img_modifier' => 'static/images/ocean.jpg',
+    'author' => 'William Wong',
+    'author_image' => 'static/images/person2.jpg',
+    'data' => 1443214800,
+ ],
+ [
+    'id' => 7,
+    'title' => 'Awaken Early',
+    'subtitle' => 'Not all those who wander are lost.',
+    'img_modifier' => 'static/images/fogy_bridge.jpg',
+    'author' => 'Mat Vogels',
+    'author_image' => 'static/images/person1.jpg',
+    'data' => 1443214800,
+ ],
+ [
+    'id' => 8,
+    'title' => 'Still Standing Tall',
+    'subtitle' => 'The world is a book, and those who do not travel read only one page.',
+    'img_modifier' => 'static/images/waterfall.jpg',
+    'author' => 'Mat Vogels',
+    'author_image' => 'static/images/person1.jpg',
+    'data' => 1443214800,
+ ],
+];
 ?>
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/styles/home.css">
+    <link rel="stylesheet" href="static/styles/home5.css">
     <title>Let's do it together</title>
 </head>
 <body>
@@ -74,7 +137,7 @@ $posts = [
                         foreach ($posts as $post) {
                         include 'post_preview.php';
                         }
-                    ?>
+                    ?> 
                     <!-- <div class="top-cards__first">
                         <p class="genre genre_color1">PHOTOGRAPHY</p>
                         <h3 class="top-cards__title">The Road Ahead</h3>
@@ -102,7 +165,7 @@ $posts = [
                                 <p class="data">September 25, 2015</p>
                             </div>
                         </div>
-                    </div> -->
+                    </div> --> 
                 </div>
             </div>
             <div class="content__center">
@@ -110,7 +173,12 @@ $posts = [
                     <h2>Most Recent</h2>
                 </div>
                 <div class="center-cards">
-                    <div class="center-cards__firts">
+                    <?php 
+                        foreach ($MiniPosts as $post) {
+                        include 'post_preview2.php';
+                        }
+                    ?>
+                    <!-- <div class="center-cards__firts">
                         <img src="static/images/air-balloon.jpg" class="image1">
                         <div class="center-cards__discribtion">
                             <h4 class="center-cards__title">Still Standing Tall</h4>
@@ -205,7 +273,7 @@ $posts = [
                                 <p class="center-cards__data">9/25/2015</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>    
             </div>   
         </div>

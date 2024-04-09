@@ -18,7 +18,7 @@
          </div>
          <div class="right-info">
             <p class="data">
-               <?= $post['data'] ?>
+               <?= date("d F, Y", $post['data']) ?>
             </p>
          </div>
       </div>

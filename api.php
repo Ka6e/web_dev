@@ -1,13 +1,17 @@
 <?php
     $method = $_SERVER['REQUEST_METHOD'];
-    if ($method == "POST"){
+    if ($method === "POST"){
         $dataAsJson = file_get_contents("php://input");
         $dataAsArray = json_decode($dataAsJson, true);
         saveImage($dataAsArray['image']);        
     }
+    else {
+      echo 'Неверный метод обработки';
+    }
+    // добавить обработку метода 
 
     function saveFile(string $file, string $data): void {
-        $myFile = fopen($file, 'w');
+        $myFile = fopen('static/image.jpg', 'w');
         if ($myFile) {
           $result = fwrite($myFile, $data);
           if ($result) {
@@ -21,7 +25,7 @@
         }
       }
 
-    function saveImage(string $imageBase64) {
+    function saveImage(string $imageBase64): void {
         $imageBase64Array = explode(';base64,', $imageBase64);
         $imgExtention = str_replace('data:image/', '', $imageBase64Array[0]);
         $imageDecoded = base64_decode($imageBase64Array[1]);
