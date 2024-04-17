@@ -1,6 +1,6 @@
-<a  title='<?= $post['title'] ?>' href="/post.php?id=<?= $post['id'] ?>" style="text-decoration: none;">
+<a  title='<?= $post['title'] ?>' href="/post.php?id=<?= $post['post_id'] ?>" style="text-decoration: none;">
    <div class="center-cards__firts">
-    <img src="<?= $post['img_modifier']?>"  class="image1">
+    <img src="<?= $post['image_url']?>"  class="image1">
    <div class="center-cards__discribtion">
         <h3 class="center-cards__title">
             <?=  $post['title'] ?>
@@ -11,14 +11,14 @@
     </div>
     <div class="center-cards__info">
         <div class="left-info1">
-            <img src="<?= $post['author_image'] ?>" class="person">
+            <img src="<?= $post['author_url'] ?>" class="person">
             <p class="center-cards__name">
                 <?= $post['author'] ?>
             </p>
         </div>
         <div class="right-info1">
             <p class="center-cards__data">
-               <?= date("m/d/Y", $post['data']) ?>
+                <?= isset($post['publish_date']) ? DateTime::createFromFormat('Y-m-d H:i:s', $post['publish_date'])->format("m/d/Y"): '' ?>
             </p>
         </div>
       </div>

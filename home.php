@@ -1,94 +1,134 @@
 <?php
+const HOST = 'localhost';
+const USERNAME = 'root';
+const PASSWORD = '';
+const DATABASE = 'blog';
 
+function createDBConnection(): mysqli {
+    $conn = new mysqli(HOST, USERNAME, PASSWORD, DATABASE);
+    if ($conn->connect_error) {
+      die("Connection failed: " . $conn->connect_error);
+    }
+    echo "Connected successfully<br>";
+    return $conn;
+  }
+  
+function closeDBConnection(mysqli $conn): void {
+    $conn->close();
+}
+  
+function getAndPrintPostsFromDB(mysqli $conn, &$posts): void {
+    $sql = "SELECT * FROM post WHERE featured = 1";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+      while($row = $result->fetch_assoc()) {
+            $posts[]= $row;
+        }
+    } else {
+      echo "0 results";
+    }
+}
 
+function getAndPrintMiniPostsFromDB(mysqli $conn, &$MiniPosts): void{
+    $sql = "SELECT * FROM post WHERE featured = 0";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0){
+        while($row = $result->fetch_assoc()){
+            $MiniPosts[] = $row;
+        }
+    } else {
+        echo "0 results";
+    }
+}
+  
+$conn = createDBConnection();
+getAndPrintPostsFromDB($conn, $posts);
+getAndPrintMiniPostsFromDB($conn, $MiniPosts);
+closeDBConnection($conn);
+  
+// $posts = [
+//  [
+//    'id' => 1,
+//    'title' => 'The Road Ahead',
+//    'subtitle' => 'The road ahead might be paved - it might not be.',
+//    'img_modifier' => 'background1',
+//    'author' => 'Mat Vogels',
+//    'author_image' => 'static/images/person1.jpg',
+//    'genre' => 'PHOTOGRAPHY',
+//    'genre_color' => 'genre_color1',
+//    'data' => 1443128400,
+//    // другие свойства этого поста
+//  ],
+//  [
+//     // свойства второго поста
+//     'id' => 2,
+//     'title' => 'From Top Down',
+//     'subtitle' => 'Once a year, go someplace you’ve never been before.',
+//     'img_modifier' => 'background2',
+//     'author' => 'William Wong',
+//     'author_image' => 'static/images/person2.jpg',
+//     'genre' => 'ADVENTURE',
+//     'genre_color' => 'genre_color2',
+//     'data' => 1443128400,
+//  ]
+// ];
 
-
-
-
-
-$posts = [
- [
-   'id' => 1,
-   'title' => 'The Road Ahead',
-   'subtitle' => 'The road ahead might be paved - it might not be.',
-   'img_modifier' => 'background1',
-   'author' => 'Mat Vogels',
-   'author_image' => 'static/images/person1.jpg',
-   'genre' => 'PHOTOGRAPHY',
-   'genre_color' => 'genre_color1',
-   'data' => 1443128400,
-   // другие свойства этого поста
- ],
- [
-    // свойства второго поста
-    'id' => 2,
-    'title' => 'From Top Down',
-    'subtitle' => 'Once a year, go someplace you’ve never been before.',
-    'img_modifier' => 'background2',
-    'author' => 'William Wong',
-    'author_image' => 'static/images/person2.jpg',
-    'genre' => 'ADVENTURE',
-    'genre_color' => 'genre_color2',
-    'data' => 1443128400,
- ]
-];
-
-$MiniPosts = [
- [
-    'id' => 3,
-    'title' => 'Still Standing Tall',
-    'subtitle' => 'Life begins at the end of your comfort zone.',
-    'img_modifier' => 'static/images/air-balloon.jpg',
-    'author' => 'William Wong',
-    'author_image' => 'static/images/person2.jpg',
-    'data' => 1443214800,
- ],
- [
-    'id' => 4,
-    'title' => 'Sunny Side Up',
-    'subtitle' => 'No place is ever as bad as they tell you it’s going to be.',
-    'img_modifier' => 'static/images/bridge.jpg',
-    'author' => 'Mat Vogels',
-    'author_image' => 'static/images/person1.jpg',
-    'data' => 1443214800,
- ],
- [
-    'id' => 5,
-    'title' => 'Water Falls',
-    'subtitle' => 'We travel not to escape life, but for life not to escape us.',
-    'img_modifier' => 'static/images/lake.jpg',
-    'author' => 'Mat Vogels',
-    'author_image' => 'static/images/person1.jpg',
-    'data' => 1443214800,
- ],
- [
-    'id' => 6,
-    'title' => 'Through the Mist',
-    'subtitle' => 'Travel makes you see what a tiny place you occupy in the world.',
-    'img_modifier' => 'static/images/ocean.jpg',
-    'author' => 'William Wong',
-    'author_image' => 'static/images/person2.jpg',
-    'data' => 1443214800,
- ],
- [
-    'id' => 7,
-    'title' => 'Awaken Early',
-    'subtitle' => 'Not all those who wander are lost.',
-    'img_modifier' => 'static/images/fogy_bridge.jpg',
-    'author' => 'Mat Vogels',
-    'author_image' => 'static/images/person1.jpg',
-    'data' => 1443214800,
- ],
- [
-    'id' => 8,
-    'title' => 'Still Standing Tall',
-    'subtitle' => 'The world is a book, and those who do not travel read only one page.',
-    'img_modifier' => 'static/images/waterfall.jpg',
-    'author' => 'Mat Vogels',
-    'author_image' => 'static/images/person1.jpg',
-    'data' => 1443214800,
- ],
-];
+// $MiniPosts = [
+//  [
+//     'id' => 3,
+//     'title' => 'Still Standing Tall',
+//     'subtitle' => 'Life begins at the end of your comfort zone.',
+//     'img_modifier' => 'static/images/air-balloon.jpg',
+//     'author' => 'William Wong',
+//     'author_image' => 'static/images/person2.jpg',
+//     'data' => 1443214800,
+//  ],
+//  [
+//     'id' => 4,
+//     'title' => 'Sunny Side Up',
+//     'subtitle' => 'No place is ever as bad as they tell you it’s going to be.',
+//     'img_modifier' => 'static/images/bridge.jpg',
+//     'author' => 'Mat Vogels',
+//     'author_image' => 'static/images/person1.jpg',
+//     'data' => 1443214800,
+//  ],
+//  [
+//     'id' => 5,
+//     'title' => 'Water Falls',
+//     'subtitle' => 'We travel not to escape life, but for life not to escape us.',
+//     'img_modifier' => 'static/images/lake.jpg',
+//     'author' => 'Mat Vogels',
+//     'author_image' => 'static/images/person1.jpg',
+//     'data' => 1443214800,
+//  ],
+//  [
+//     'id' => 6,
+//     'title' => 'Through the Mist',
+//     'subtitle' => 'Travel makes you see what a tiny place you occupy in the world.',
+//     'img_modifier' => 'static/images/ocean.jpg',
+//     'author' => 'William Wong',
+//     'author_image' => 'static/images/person2.jpg',
+//     'data' => 1443214800,
+//  ],
+//  [
+//     'id' => 7,
+//     'title' => 'Awaken Early',
+//     'subtitle' => 'Not all those who wander are lost.',
+//     'img_modifier' => 'static/images/fogy_bridge.jpg',
+//     'author' => 'Mat Vogels',
+//     'author_image' => 'static/images/person1.jpg',
+//     'data' => 1443214800,
+//  ],
+//  [
+//     'id' => 8,
+//     'title' => 'Still Standing Tall',
+//     'subtitle' => 'The world is a book, and those who do not travel read only one page.',
+//     'img_modifier' => 'static/images/waterfall.jpg',
+//     'author' => 'Mat Vogels',
+//     'author_image' => 'static/images/person1.jpg',
+//     'data' => 1443214800,
+//  ],
+// ];
 ?>
 <!DOCTYPE html>
 <head>
@@ -136,8 +176,8 @@ $MiniPosts = [
                     <?php 
                         foreach ($posts as $post) {
                         include 'post_preview.php';
-                        }
-                    ?> 
+                    }
+                    ?>  
                     <!-- <div class="top-cards__first">
                         <p class="genre genre_color1">PHOTOGRAPHY</p>
                         <h3 class="top-cards__title">The Road Ahead</h3>

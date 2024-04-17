@@ -38,18 +38,18 @@ INSERT INTO post(title, subtitle, content, author, author_url, publish_date, ima
   spectral world at the funeral of some ghost. But under it all they were men, penetrating<br>
   the land of desolation and mockery and silence, puny adventurers bent on colossal<br>
   adventure, pitting themselves against the might of a world as remote and alien and<br>
-  pulseless as the abysses of space.', 'Mat Vogels', 'static/images/person1.jpg', 1443128400, 'background1', 1);
-INSERT INTO post(title, subtitle, author, author_url, publish_date, image_url, featured) VALUES
-('From Top Down', 'Once a year, go someplace you’ve never been before.', 'William Wong', 'static/images/person2.jpg', 1443128400, 'background2', 1);
-INSERT INTO post(title, subtitle, author, author_url, publish_date, image_url, featured) VALUES
-('Still Standing Tall', 'Life begins at the end of your comfort zone.', 'William Wong', 'static/images/person2.jpg', 1443214800, 'static/images/air-balloon.jpg', 0);
-INSERT INTO post(title, subtitle, author, author_url, publish_date, image_url, featured) VALUES
-('Sunny Side Up', 'No place is ever as bad as they tell you it’s going to be.', 'Mat Vogels', 'static/images/person1.jpg', 1443214800, 'static/images/bridge.jpg', 0);
-INSERT INTO post(title, subtitle, author, author_url, publish_date, image_url, featured) VALUES
-('Water Falls', 'We travel not to escape life, but for life not to escape us.', 'Mat Vogels', 'static/images/person1.jpg', 1443214800, 'static/images/lake.jpg', 0);
-INSERT INTO post(title, subtitle, author, author_url, publish_date, image_url, featured) VALUES
-('Through the Mist', 'Travel makes you see what a tiny place you occupy in the world.', 'William Wong', 'static/images/person2.jpg', 1443214800, 'static/images/ocean.jpg', 0);
-INSERT INTO post(title, subtitle, author, author_url, publish_date, image_url, featured) VALUES
-('Awaken Early', 'Not all those who wander are lost.', 'Mat Vogels', 'static/images/person1.jpg', 1443214800, 'static/images/fogy_bridge.jpg', 0);
-INSERT INTO post(title, subtitle, author, author_url, publish_date, image_url, featured) VALUES
-('Still Standing Tall', 'The world is a book, and those who do not travel read only one page.', 'Mat Vogels', 'static/images/person1.jpg', 1443214800, 'static/images/waterfall.jpg', 0);
+  pulseless as the abysses of space.', 'Mat Vogels', 'static/images/person1.jpg', FROM_UNIXTIME(1443128400), 'background1', 1);
+INSERT INTO post(title, subtitle, author, author_url, publish_date, image_url, featured, content) VALUES
+('From Top Down', 'Once a year, go someplace you’ve never been before.', 'William Wong', 'static/images/person2.jpg', FROM_UNIXTIME(1443128400), 'background2', 1, '');
+INSERT INTO post(title, subtitle, author, author_url, publish_date, image_url, featured, content) VALUES
+('Still Standing Tall', 'Life begins at the end of your comfort zone.', 'William Wong', 'static/images/person2.jpg', FROM_UNIXTIME(1443128400), 'static/images/air-balloon.jpg', 0, '');
+INSERT INTO post(title, subtitle, author, author_url, publish_date, image_url, featured, content) VALUES
+('Sunny Side Up', 'No place is ever as bad as they tell you it’s going to be.', 'Mat Vogels', 'static/images/person1.jpg', FROM_UNIXTIME(1443128400), 'static/images/bridge.jpg', 0, '');
+INSERT INTO post(title, subtitle, author, author_url, publish_date, image_url, featured, content) VALUES
+('Water Falls', 'We travel not to escape life, but for life not to escape us.', 'Mat Vogels', 'static/images/person1.jpg', FROM_UNIXTIME(1443128400), 'static/images/lake.jpg', 0, '');
+INSERT INTO post(title, subtitle, author, author_url, publish_date, image_url, featured, content) VALUES
+('Through the Mist', 'Travel makes you see what a tiny place you occupy in the world.', 'William Wong', 'static/images/person2.jpg', FROM_UNIXTIME(1443128400), 'static/images/ocean.jpg', 0, '');
+INSERT INTO post(title, subtitle, author, author_url, publish_date, image_url, featured, content) VALUES
+('Awaken Early', 'Not all those who wander are lost.', 'Mat Vogels', 'static/images/person1.jpg', FROM_UNIXTIME(1443128400), 'static/images/fogy_bridge.jpg', 0, '');
+INSERT INTO post(title, subtitle, author, author_url, publish_date, image_url, featured, content) VALUES
+('Still Standing Tall', 'The world is a book, and those who do not travel read only one page.', 'Mat Vogels', 'static/images/person1.jpg', FROM_UNIXTIME(1443128400), 'static/images/waterfall.jpg', 0, '');
