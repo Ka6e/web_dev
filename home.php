@@ -129,7 +129,7 @@ closeDBConnection($conn);
 //     'data' => 1443214800,
 //  ],
 // ];
-?>
+?> 
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
