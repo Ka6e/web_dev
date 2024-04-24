@@ -16,33 +16,32 @@ function closeDBConnection(mysqli $conn): void {
     $conn->close();
 }
 
-function getAndPrintInfoFromDB(mysqli $conn, &$postId): void {
-    $sql = "SELECT * FROM post WHERE post_id = $postId  ";
-    $result = $conn->query($sql);
-    if ($result->num_rows > 0){
-        while($row = $result->fetch_assoc()) {
-            $Info[] = $row;
-        }
-    } else {
-        echo "0 results";
+function getAndPrintInfoFromDB(mysqli $conn, &$postId): array {
+    $sql = "SELECT * FROM post WHERE post_id = $postId";
+    if(empty($postId)){
+        header("Location: home.php");
+        exit();
     }
+    $result = $conn->query($sql);
+    $info = [] ;
+    if ($result->num_rows > 0){
+       $info = $result->fetch_assoc();
+    } else {
+        header("Location: home.php");
+        exit();
+    }
+    return $info;
 }
 
 $conn = createDBConnection();
 $postId = $_GET['id'];
-getAndPrintInfoFromDB($conn,  $postId);
+$postInfo = getAndPrintInfoFromDB($conn,  $postId);
 closeDBConnection($conn);
 
 // $post = [
 //   'title' => 'The Road Ahead',
 //   'subtitle' => 'The road ahead might be paved - it might not be.',
 //   'img' => 'static/images/northern-lights.jpg',
-//   'logo1' => 'static/images/Escape-black.svg',
-//   'logo2' => 'static/images/Escape-white.svg',
-//   'nav1' => 'HOME',
-//   'nav2' => 'CATEGORIES',
-//   'nav3' => 'ABOUT',
-//   'nav4' => 'CONTACT',
 //   'text' => 'Dark spruce forest frowned on either side the frozen waterway. The trees had been<br>
 //   stripped by a recent wind of their white covering of frost, and they seemed to lean<br>
 //   towards each other, black and ominous, in the fading light. A vast silence reigned over<br>
@@ -96,42 +95,41 @@ closeDBConnection($conn);
 <body>
     <header class="header">
         <nav class="navigation">
-            <img class="header__logo" src="<?= $post['logo1'] ?>">
+            <img class="header__logo" src=static/images/Escape-black.svg>
             <ul class="navigation__header-list">
-                <li><?= $post['nav1']?></li>
-                <li><?= $post['nav2']?></li>
-                <li><?= $post['nav3']?></li>
-                <li><?= $post['nav4']?></li>
+                <li>HOME</li>
+                <li>CATEGORIES</li>
+                <li>ABOUT</li>
+                <li>CONTACT</li>
             </ul>
         </nav>
     </header>
     <main class="main">
         <div class="main__heading heading">
             <h1 class="heading__title">
-                <?= $Info['title'] . ' ' .  $postId?>
+                <?= $postInfo['title'] . ' ' .  $postId?>
             </h1>
             <p class="heading__subtitle">
-                <?= $Info['subtitle'] ?>
+                <?= $postInfo['subtitle'] ?>
             </p>
         </div>
-        <img class="banner" src="<?= $post['image_url'] ?>">
+        <img class="banner" src="<?= $postInfo['image_url'] ?>">
         <div class="main__content">
             <p class="main__content-text">
-                <?= $post['content']  ?>
+                <?= $postInfo['content']  ?>
             </p>
         </div>
     </main>
     <footer class="footer">
         <nav class="navigation">
-            <img class="footer__logo" src="<?= $post['logo2'] ?>">
+            <img class="footer__logo" src=static/images/Escape-white.svg>
             <ul class="navigation__footer-list">
-                <li><?= $post['nav1']?></li>
-                <li><?= $post['nav2']?></li>
-                <li><?= $post['nav3']?></li>
-                <li><?= $post['nav4']?></li>
+                <li>HOME</li>
+                <li>CATEGORIES</li>
+                <li>ABOUT</li>
+                <li>CONTACT</li>
             </ul>
         </nav>
     </footer>
 </body>
-
 </html>

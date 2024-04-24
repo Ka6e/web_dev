@@ -1,5 +1,5 @@
 <a  title='<?= $post['title'] ?>' href="/post.php?id=<?= $post['post_id'] ?>" style="text-decoration: none;">
-   <div class="top-cards__first <?= $post['image_url']?>">
+   <div class="top-cards__first <?= $post['background']?>">
       <p class="genre <?= $post['genre_color'] ?>">
          <?= $post['genre'] ?>
       </p> 
