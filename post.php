@@ -118,7 +118,7 @@ closeDBConnection($conn);
             <hr class="line">
             <div class="search-form_box">
                 <input class="search-form_txt" type="text" placeholder="Enter your email address">
-                <button class="search-form_button">submit</button>
+                <button class="search-form_button">Submit</button>
             </div>
         </div>
         <footer class="footer">

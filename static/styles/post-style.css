@@ -162,6 +162,7 @@ footer {
 
 .search-form_txt{
     border: none;
+    outline: none;
     border-radius: 3px 0px 0px 3px;
     padding: 18px 208px 18px 35px;
 }
@@ -177,4 +178,5 @@ footer {
     border: none;
     padding: 18px 43px 18px 44px;
     border-radius: 0px 3px 3px 0px;
+    cursor: pointer;
 }

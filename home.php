@@ -134,7 +134,7 @@ closeDBConnection($conn);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/styles/home5.css">
+    <link rel="stylesheet" href="static/styles/home.css">
     <title>Let's do it together</title>
 </head>
 <body>
@@ -318,16 +318,28 @@ closeDBConnection($conn);
             </div>   
         </div>
     </main>
-    <footer class="footer">
-        <nav class="footer__menu">
-            <img src="static/images/Escape-white.svg" class="footer__logo">
-            <ul class="footer__menu-list">
-                <li>HOME</li>
-                <li>CATEGORIES</li>
-                <li>ABOUT</li>
-                <li>CONTACT</li>
-            </ul>
-        </nav>
-    </footer>
+    <div class="bottom">
+        <div class="search-form">
+            <div class="search-form_support">
+                <p class="search-form_support-text">Stay in Touch</p>
+            </div>
+            <hr class="line">
+            <div class="search-form_box">
+                <input class="search-form_txt" type="text" placeholder="Enter your email address">
+                <button class="search-form_button">Submit</button>
+            </div>
+        </div>
+        <footer class="footer">
+            <nav class="footer__menu">
+                <img src="static/images/Escape-white.svg" class="footer__logo">
+                <ul class="footer__menu-list">
+                    <li>HOME</li>
+                    <li>CATEGORIES</li>
+                    <li>ABOUT</li>
+                    <li>CONTACT</li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
 </body>
 </html>

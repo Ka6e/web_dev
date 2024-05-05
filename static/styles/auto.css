@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen:wght@300;400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url("../images/reeds.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: #42464966;
+    height: 100vh;
+}
+
+.main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proposal{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.logo{
+    margin-right: 148px;
+    margin-bottom: 16px;
+}
+
+.log-in{
+    background-color: #FFFFFF;
+    max-width: 560px;
+    max-height: 480;
+    margin-left: 220px;
+}
+
+.enter{
+    padding: 56px 340px 50px 40px;
+    font-family: 'Lora', sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+}
+
+.data-entry{
+    padding: 0px 40px 164px;
+}
+
+.mail{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: #7A7A7A;
+    margin-bottom: 5px;
+}
+
+.data-entry_email{
+    margin-bottom: 40px;
+}
+
+#email{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #EAEAEA;
+    outline: none;
+}
+
+.pwd{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: #7A7A7A;
+}
+
+#pass{
+    border: none;
+    border-bottom: 1px solid #EAEAEA;
+    outline: none;
+    margin-bottom: 40px;
+}
+
+.confirming{
+    background: #DD783F;
+    border: none;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #FFFFFF;
+    padding: 12px 24px 12px 24px;
+    gap: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.confirming:active{
+    transform: scale(0.98);
+}
