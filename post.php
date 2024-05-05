@@ -1,20 +1,5 @@
 <?php
-const HOST = 'localhost';
-const USERNAME = 'root';
-const PASSWORD = '';
-const DATABASE = 'blog';
-
-function createDBConnection(): mysqli {
-    $conn = new mysqli(HOST, USERNAME, PASSWORD, DATABASE);
-    if ($conn->connect_error) {
-      die("Connection failed: " . $conn->connect_error);
-    }
-    echo "Connected successfully<br>";
-    return $conn;
-  }
-function closeDBConnection(mysqli $conn): void {
-    $conn->close();
-}
+include 'connection.php';
 
 function getAndPrintInfoFromDB(mysqli $conn, &$postId): array {
     $sql = "SELECT * FROM post WHERE post_id = $postId";
@@ -22,13 +7,18 @@ function getAndPrintInfoFromDB(mysqli $conn, &$postId): array {
         header("Location: home.php");
         exit();
     }
-    $result = $conn->query($sql);
-    $info = [] ;
-    if ($result->num_rows > 0){
-       $info = $result->fetch_assoc();
-    } else {
-        header("Location: home.php");
-        exit();
+    try {
+        $result = $conn->query($sql);
+        $info = [] ;
+        if ($result->num_rows > 0){
+           $info = $result->fetch_assoc();
+        } else {
+            header("Location: home.php");
+            exit();
+        }
+    }
+    catch (Exception $error) {
+        echo $error->getMessage();
     }
     return $info;
 }
@@ -87,7 +77,7 @@ closeDBConnection($conn);
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="static/styles/post-styles.css">
+    <link rel="stylesheet" href="static/styles/post-style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> The Road Ahead </title>
@@ -110,26 +100,38 @@ closeDBConnection($conn);
                 <?= $postInfo['title'] . ' ' .  $postId?>
             </h1>
             <p class="heading__subtitle">
-                <?= $postInfo['subtitle'] ?>
+                <?= $postInfo['subtitle']?>
             </p>
         </div>
         <img class="banner" src="<?= $postInfo['image_url'] ?>">
         <div class="main__content">
             <p class="main__content-text">
-                <?= $postInfo['content']  ?>
+                <?= $postInfo['content']?>
             </p>
         </div>
     </main>
-    <footer class="footer">
-        <nav class="navigation">
-            <img class="footer__logo" src=static/images/Escape-white.svg>
-            <ul class="navigation__footer-list">
-                <li>HOME</li>
-                <li>CATEGORIES</li>
-                <li>ABOUT</li>
-                <li>CONTACT</li>
-            </ul>
-        </nav>
-    </footer>
+    <div class="bottom">
+        <div class="search-form">
+            <div class="search-form_support">
+                <p class="search-form_support-text">Stay in Touch</p>
+            </div>
+            <hr class="line">
+            <div class="search-form_box">
+                <input class="search-form_txt" type="text" placeholder="Enter your email address">
+                <button class="search-form_button">submit</button>
+            </div>
+        </div>
+        <footer class="footer">
+            <nav class="navigation">
+                <img class="footer__logo" src=static/images/Escape-white.svg>
+                <ul class="navigation__footer-list">
+                    <li>HOME</li>
+                    <li>CATEGORIES</li>
+                    <li>ABOUT</li>
+                    <li>CONTACT</li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
 </body>
 </html>
