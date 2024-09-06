@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color:  #2E2E2E;
+    padding: 17px 131px 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    max-width: 80px;
+    max-height: 40px;
+}
+
+.logo-white{
+    max-width: 132px;
+    max-height: 26px;
+}
+
+.avatar-N{
+    padding-top: 4px;
+    padding-right: 8px;
+}
+
+.log_out{
+    padding: 8px;
+}
+
+.main{
+    background-color:  #F7F7F7;
+}

@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen:wght@300;400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.background{
+    max-height: 500px;
+    background-image: url("../images/cave.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: #00000080;
+    background-blend-mode: overlay;
+}
+ 
+.header{
+    padding: 17px 250px;
+}
+
+.header__menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__menu-list li{
+    list-style: none; 
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+    text-align: left;
+    text-decoration: none;
+    font-family: "Oxygen", sans-serif;
+    color: #FFFFFF;
+    padding: 10px 20px;
+} 
+
+.main__heading{
+    padding: 184px 250px 75px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__heading h1{
+    font-family: "Lora", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 51px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.main__heading p{
+    margin-top: 20px;
+    font-family: "Oxygen", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFFA1;
+}
+
+.main__heading-button{
+    margin-top: 31px;
+    width: 167px;
+    height: 44px;
+    border-radius: 3px; 
+    border: 0;
+    background-color: #DD783F;  
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Oxygen", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.main__menu-sections{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 22px;
+    padding-bottom: 23px;
+}
+
+.main__menu-sections li{
+    list-style: none;
+    font-family: "Lora", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #768088;
+}
+
+.main__content{
+    background-color: #F7F7F7;
+}
+
+.content__top{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content__top-tilte{
+    margin: 60px 0px 16px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid;
+    border-color: #DEDEDE;
+    font-family: "Oxygen",sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.content__top-tilte h2{
+    font-family: "Oxygen", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #2E2E2E;
+}
+
+.top-cards{
+    display: flex;
+    justify-content: space-between;
+    width: 62%;
+   
+}
+
+.top-cards__first{
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    justify-content: flex-end; 
+}
+
+.background1{
+    background-image:url("../images/northern-lights.jpg");
+    background-size: cover;
+}
+
+.genre{
+    margin: 20px 332px 53px 20px;
+    padding: 6px 9px 7px;
+    border-radius: 2px;
+    color: #FFFFFF;
+    font-family: "Oxygen", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.genre_color1{
+    background-color: #A872B7;
+}
+
+.top-cards__title{
+    margin: 58px 233px 6px 20px;
+    font-family: "Lora", sans-serif;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;    
+}
+
+.top-cards__subtitle{
+    margin: 0px 96px 12px 20px;
+    font-family: "Oxygen", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:  #FFFFFFB2;
+}
+
+.info{
+    margin: 0px 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-info{
+    display: flex;
+    align-items: center;
+}
+
+.name{
+    color: #FFFFFFB2;
+    font-family: "Oxygen", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;    
+}
+
+.top-cards__second{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 3px;
+}
+
+.background2{
+    background-image: url("../images/wish-balls.jpg");
+    background-size: cover;
+}
+
+.genre_color2{
+    background-color: #DD783F;
+}
+
+.person{
+    max-width: 26px;
+    max-height:  26px;
+    border-radius: 60px;    
+}
+
+.content__center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content__center-title{
+    margin-top: 60px;
+    margin-bottom: 16px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid;
+    border-color: #DEDEDE;
+}
+
+.content__center-title h2{
+    font-family: "Oxygen", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #2E2E2E;    
+}
+
+.center-cards{
+    margin-bottom: 89px;
+    display: flex;
+    width: 62%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.center-cards__discribtion{
+    width: 100%;
+    max-width: 296px;
+    max-height: 93px;
+    height: 93px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid;
+    border-color: #EFEFEF;
+    background-color: #FFFFFF;
+}
+
+.center-cards__info{
+    margin-bottom: 25px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.left-info1{
+    margin-left: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.center-cards__title{
+    font-family: "Lora", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #101315;
+    margin-top: 14px;
+    margin-left: 13px;
+    margin-bottom: 6px;
+    margin-right: auto;
+}
+
+.center-cards__subtitle{
+    margin-left: 13px;
+    margin-right: 13px;
+    margin-bottom: 12px;
+    word-wrap: break-word;
+    font-family: "Oxygen", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #7A7A7A; 
+}
+
+/* .subtitle1{
+    padding-bottom: 20px;
+    padding-right: 16px;
+}
+
+.subtitle5{
+    padding-bottom: 20px;
+    padding-right: 69px;
+}
+
+.center-cards__second{
+    margin-bottom: 25px;
+} */
+
+.center-cards__name{
+    margin-left: 10px;
+    font-family: "Oxygen", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #999999;    
+}
+
+.name{
+    padding-left: 10px;
+}
+
+.center-cards__data{
+    margin-right: 13px;
+    font-family: "Oxygen", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #999999;    
+}
+
+.data{
+    color: #FFFFFFB2;
+    font-family: "Oxygen", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.image1{   
+    width: 296px;
+    object-fit: cover;
+    max-height: 150px;
+}
+
+.footer{
+    background-color: #232F3899;
+}
+
+.footer__menu{
+    padding: 28px 240px 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__menu-list li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+    text-align: left;
+    text-decoration: none;
+    font-family: "Oxygen", sans-serif;
+    color: #FFFFFF99;
+}
+
+
+.bottom{
+    background-image: url("../images/blured-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+.search-form{
+    padding-top: 62px;
+}
+
+.search-form_support{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: #EFEFEF;
+    padding-top: 20px;
+    padding-bottom: 18px;
+
+}
+
+.line{
+    max-width: 188px;
+    margin: auto;
+    color: #DEDEDE;
+    margin-bottom: 20px;
+}
+
+.search-form_box{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+
+.search-form_txt{
+    border: none;
+    outline: none;
+    border-radius: 3px 0px 0px 3px;
+    padding: 18px 208px 18px 35px;
+}
+
+.search-form_button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    text-align: left;
+    color: #F8F8F8;
+    background-color: #FFFFFF47;
+    border: none;
+    padding: 18px 43px 18px 44px;
+    border-radius: 0px 3px 3px 0px;
+    cursor: pointer;
+}
